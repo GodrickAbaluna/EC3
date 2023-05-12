@@ -1,0 +1,41 @@
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<title>SW2</title>
+
+ <script>
+
+          
+	       function myFirstfunction(){
+		     var ttt =  document.getElementById('id1').value;
+             window.alert(ttt/60); 
+			}
+           function mySecondfunction(){
+		     var ttt =  document.getElementById('id1').value;
+             window.alert(ttt/3600); 
+			}
+            function myThirdfunction(){
+		     var ttt =  document.getElementById('id1').value;
+             window.alert(ttt/86400); 
+			}
+	 </script>
+</head>
+<body>
+      <h1> Time Calculator</h1>
+      <input type="text" id="id1" placeholder="seconds"><br>
+	  <div class="btn-group">
+      <input type="button"  onclick="myFirstfunction()" value="In Minutes">
+	  <input type="button"  onclick="mySecondfunction()" value="In Hours">
+	  <input type="button"  onclick="myThirdfunction()" value="In Days">
+      
+      
+      </div>
+	 <input type="submit" onclick="myFirstfunction()"><br>
+	 <p id="answer"></p>
+	 
+	
+	 
+</body>
+</html>
